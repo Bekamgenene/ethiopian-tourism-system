@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Booking - Ethiopian Tourism</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="font-roboto bg-gray-100">
+    <header class="bg-blue-900 text-white p-4">
+        <h1 class="text-2xl font-bold text-center">Booking Process</h1>
+    </header>
+    <main class="container mx-auto p-4">
+      <form action="process.php" method="POST" class="bg-white rounded-lg shadow-md p-6">
+  <div class="mb-4">
+      <label class="block text-gray-700" for="tour-package">Tour Package</label>
+      <select class="w-full px-3 py-2 border rounded-lg" id="tour-package" name="tour-package" required>
+          <option value="lake-tana-tour">Lake Tana Tour</option>
+          <option value="blue-nile-falls-adventure">Blue Nile Falls Adventure</option>
+          <option value="lake-wenchi-retreat">Lake Wenchi Retreat</option>
+          <option value="addis-ababa-cultural-tour">Addis Ababa Cultural Tour</option>
+          <option value="lalibela-historical-tour">Lalibela Historical Tour</option>
+          <option value="simien-mountains-wildlife-tour">Simien Mountains Wildlife Tour</option>
+      </select>
+  </div>
+  <div class="mb-4">
+      <label class="block text-gray-700" for="name">Name</label>
+      <input class="w-full px-3 py-2 border rounded-lg" id="name" name="name" type="text" required>
+  </div>
+  <div class="mb-4">
+      <label class="block text-gray-700" for="email">Email</label>
+      <input class="w-full px-3 py-2 border rounded-lg" id="email" name="email" type="email" required>
+  </div>
+  <div class="mb-4">
+      <label class="block text-gray-700" for="phone">Phone</label>
+      <input class="w-full px-3 py-2 border rounded-lg" id="phone" name="phone" type="tel" required>
+  </div>
+  <div class="mb-4">
+      <label class="block text-gray-700" for="date">Preferred Date</label>
+      <input class="w-full px-3 py-2 border rounded-lg" id="date" name="date" type="date" required>
+  </div>
+  <input type="hidden" name="book" value="1">
+  <button type="submit" class="bg-blue-900 text-white py-2 px-4 rounded-full hover:bg-blue-700">Book Now</button>
+</form>
+    </main>
+</body>
+</html>

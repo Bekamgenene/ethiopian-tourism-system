@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tour Packages - Ethiopian Tourism</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="font-roboto bg-gray-100">
+    <header class="bg-blue-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Ethiopian Tourism</h1>
+            <nav class="flex items-center space-x-4">
+                <ul class="flex space-x-4">
+                    <li><a class="hover:underline" href="index.html">Home</a></li>
+                    <li><a class="hover:underline" href="destinations.html">Destinations</a></li>
+                    <li><a class="hover:underline" href="about.html">About</a></li>
+                    <li><a class="hover:underline" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="relative">
+                    <input class="rounded-full py-2 px-4 text-black" placeholder="Search..." type="text"/>
+                    <button class="absolute right-0 top-0 mt-2 mr-2 text-blue-900">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <a class="bg-white text-blue-900 py-2 px-4 rounded-full hover:bg-gray-200" href="register.html">Sign Up</a>
+                <a class="bg-white text-blue-900 py-2 px-4 rounded-full hover:bg-gray-200" href="Login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto p-4">
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold mb-4">Browse Tour Packages</h2>
+            <form action="process.php" method="POST" class="bg-white rounded-lg shadow-md p-6 mb-4">
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="destination">Destination</label>
+                    <input class="w-full px-3 py-2 border rounded-lg" id="destination" name="destination" type="text" placeholder="Enter destination (e.g., Lalibela)">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="price-range">Price Range</label>
+                    <input class="w-full px-3 py-2 border rounded-lg" id="price-range" name="price-range" type="text" placeholder="Enter price range (e.g., 100-500)">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="duration">Duration (Days)</label>
+                    <input class="w-full px-3 py-2 border rounded-lg" id="duration" name="duration" type="number" placeholder="Enter duration in days">
+                </div>
+                <button type="submit" class="bg-blue-900 text-white py-2 px-4 rounded-full hover:bg-blue-700">Search</button>
+            </form>
+        </section>
+
+        <section id="tour-packages" class="mb-8">
+            <h2 class="text-3xl font-bold mb-4">Available Tour Packages</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Example Tour Package 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img alt="Lake Tana Tour" class="w-full h-48 object-cover" src="https://storage.googleapis.com/a1aa/image/Pg3Ks4ztOjb4HBrbisglZEYweToVmyl283e8HfLxyQo8519nA.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Lake Tana Tour</h3>
+                        <p class="text-gray-700">Explore the beauty of Lake Tana with boat rides and visits to ancient monasteries. Duration: 3 days. Price: $300.</p>
+                    </div>
+                </div>
+                <!-- Example Tour Package 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img alt="Blue Nile Falls Adventure" class="w-full h-48 object-cover" src="https://storage.googleapis.com/a1aa/image/OAvSptcyIs5fZ6H2pXRnW8YaQfDSqnnT6yK39kqoaV8686enA.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Blue Nile Falls Adventure</h3>
+                        <p class="text-gray-700">Experience the majestic Blue Nile Falls with guided hikes and sightseeing. Duration: 2 days. Price: $200.</p>
+                    </div>
+                </div>
+                <!-- Example Tour Package 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img alt="Lake Wenchi Retreat" class="w-full h-48 object-cover" src="https://storage.googleapis.com/a1aa/image/4XqBPIefDcv83UFNjFlK7Y0RgbFhJJ2eidEc4aSQw93s519nA.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Lake Wenchi Retreat</h3>
+                        <p class="text-gray-700">Relax at Lake Wenchi with opportunities for hiking and horseback riding. Duration: 4 days. Price: $400.</p>
+                    </div>
+                </div>
+                <!-- Additional tour packages can be added here -->
+            </div>
+        </section>
+    </main>
+    <footer class="bg-blue-900 text-white p-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Ethiopian Tourism. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Registration - Ethiopian Tourism</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="font-roboto bg-gray-100">
+    <header class="bg-blue-900 text-white p-4">
+        <h1 class="text-2xl font-bold text-center">Ethiopian Tourism Registration</h1>
+    </header>
+    <main class="container mx-auto p-4">
+      <form action="process.php" method="POST" class="bg-white rounded-lg shadow-md p-6">
+  <div class="mb-4">
+      <label class="block text-gray-700" for="full-name">Full Name</label>
+      <input class="w-full px-3 py-2 border rounded-lg" id="full-name" name="full-name" type="text" placeholder="Enter your full name" required>
+  </div>
+  <div class="mb-4">
+      <label class="block text-gray-700" for="email">Email Address</label>
+      <input class="w-full px-3 py-2 border rounded-lg" id="email" name="email" type="email" placeholder="Enter your email address" required>
+  </div>
+  <div class="mb-4">
+      <label class="block text-gray-700" for="password">Password</label>
+      <input class="w-full px-3 py-2 border rounded-lg" id="password" name="password" type="password" placeholder="Create a password" required>
+  </div>
+  <input type="hidden" name="register" value="1">
+  <button type="submit" class="bg-blue-900 text-white py-2 px-4 rounded-full hover:bg-blue-700">Register</button>
+</form>
+    </main>
+</body>
+</html>
