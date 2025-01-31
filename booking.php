@@ -75,7 +75,7 @@ if (isset($_GET['id'])) {
     </main>
     <footer class="bg-blue-900 text-white p-4">
         <div class="container mx-auto text-center">
-            <p>&copy; 2023 Ethiopian Tourism. All rights reserved.</p>
+            <p>&copy; 2025 Ethiopian Tourism. All rights reserved.</p>
         </div>
     </footer>
 </body>
