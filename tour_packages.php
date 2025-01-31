@@ -60,7 +60,7 @@ $tourPackages = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </main>
     <footer class="bg-blue-900 text-white p-4">
         <div class="container mx-auto text-center">
-            <p>&copy; 2023 Ethiopian Tourism. All rights reserved.</p>
+            <p>&copy; 2025 Ethiopian Tourism. All rights reserved.</p>
         </div>
     </footer>
 </body>
