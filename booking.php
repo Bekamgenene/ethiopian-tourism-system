@@ -29,8 +29,8 @@ if (isset($_GET['id'])) {
                 <ul class="flex space-x-4">
                     <li><a class="hover:underline" href="index.html">Home</a></li>
                     <li><a class="hover:underline" href="destinations.html">Destinations</a></li>
-                    <li><a class="hover:underline" href="about.html">About</a></li>
-                    <li><a class="hover:underline" href="contact.html">Contact</a></li>
+                    <li><a class="hover:underline" href="About.html">About</a></li>
+                    <li><a class="hover:underline" href="Contact.html">Contact</a></li>
                 </ul>
                 <div class="relative">
                     <input class="rounded-full py-2 px-4 text-black" placeholder="Search..." type="text"/>
