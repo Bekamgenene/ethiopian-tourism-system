@@ -1,6 +1,6 @@
 # Ethiopian Tourism System
 
-![Ethiopian Tourism System](https://bekamgenene.github.io/ethiopian-tourism-system)
+[Ethiopian Tourism System](https://bekamgenene.github.io/ethiopian-tourism-system/)
 
 ## Overview
 The **Ethiopian Tourism System** is a web-based platform designed to showcase Ethiopia's rich cultural heritage, historical landmarks, and breathtaking landscapes. It provides tourists with essential information, recommendations, and an interactive user experience to explore Ethiopia digitally.
